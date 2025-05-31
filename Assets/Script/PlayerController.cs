@@ -24,7 +24,7 @@ public class PlayerController : MonoBehaviour
         {
             _moveInput /= Mathf.Sqrt(_moveInputmMagnSqrt);
         }
-        return _moveInput * (speed * Time.deltaTime);
+        return _moveInput * (speed * Time.fixedDeltaTime);
     }
 
     void Update()
